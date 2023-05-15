@@ -1,0 +1,37 @@
+<!-- welcome modal start -->
+<div class="welcome-modal" [ngClass]="{'hide': !shouldShow}">
+    <div class="row p-1">
+        <div class="col-8">
+            <p class="weight-500">
+                {{title | titlecase}}
+            </p>
+        </div>
+        <div class="col-4">
+            <button class="welcome-modal-close" (click)="shouldShow = false">
+                <i class="ec ec-close-remove"></i>
+            </button>
+        </div>
+    </div>
+    <iframe class="w-100 border-0" src="https://embed.lottiefiles.com/animation/31548"></iframe>
+    <!-- <div class="text-center">
+        <h3 class="h5 weight-500 text-center mb-2">
+            {{title}}
+
+        </h3>
+    </div> -->
+    <div class="p-1 text-left">
+        <small>{{message}}</small>
+    </div>
+
+    <!-- <a href="https://github.com/dropways/deskapp" target="_blank" class="btn btn-success btn-sm mb-0 mb-md-3 w-100">
+        DOWNLOAD
+        <i class="fa fa-download"></i>
+    </a> -->
+    <p class="font-14 text-center mb-1 d-none d-md-block">
+        {{createdAt | date: 'H:mm:ss':'UTC'}}
+    </p>
+</div>
+<!-- <button class="welcome-modal-btn">
+			<i class="fa fa-download"></i> Download
+		</button> -->
+<!-- welcome modal end -->

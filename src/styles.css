@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+.shakeit {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+
+@keyframes shake {
+  10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+      transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+      transform: translate3d(4px, 0, 0);
+  }
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.not-found{
+  margin-bottom: 25px;
+}
+
+
+.notificationCustom{
+  background-color: red;
+}
+
+.formError{
+  border: 1px solid red !important;
+}
+
+.errorMessageText{
+  color: red !important;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+
+.hideit{
+  display: none !important;
+}
+
+.mat-card-image {
+  width: calc(100% + 32px);
+  margin: 0px !important;
+}
+
+
+.notificationCustom{
+  z-index: 1005 !important;
+}
+.simple-notification{
+  z-index: 1005 !important;
+}
+.mat-tab-header{
+  margin-bottom: 5px !important;
+    border-bottom: 2px solid black;
+}
+.mat-tab-body-content {
+  height: 100%;
+  /* overflow: auto; Default one */
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  max-height: 1000px;
+  min-height: 300px;
+}
